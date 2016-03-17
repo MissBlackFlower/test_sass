@@ -1,0 +1,45 @@
+// Normally mainpage styles
+.article
+  overflow: hidden
+  background-color: #fff
+  +shadow(10px)
+  .article__img
+    +png(newsImg1)
+    &:hover
+      +png(newsImg2)
+
+  .location
+    color: $orange
+    text-align: left
+    line-height: 37px
+    .location__caption
+      font-size: 24px
+      font-weight: bold
+      +v(middle)
+    .location__logo
+      +svg(location, 12, 16)
+      +v(middle)
+    .location__text
+      font-size: 14px
+      +v(middle)
+
+  .date
+    clear:right
+    color: $grey
+    font-size: 14px
+    line-height: 16px
+    .date__logo
+      +svg(date, 17, 16)
+    .date__namber
+      +v(middle)
+
+  .article__caption
+    clear: both
+    color: $blue
+    font-size: 22px
+    line-height: 24px
+    font-weight: bold
+    text-decoration: underline
+
+  .article__text
+    font-size: 14px
